@@ -11,6 +11,8 @@
   const calc = C.CALCS[form.dataset.calc];
   if (!calc) return;
 
+  var trackedUse = false;
+
   // Read current display values out of the DOM into a {key: value} object.
   function readDisp() {
     const disp = {};
@@ -23,7 +25,12 @@
   function recompute() {
     const unit = form.dataset.unit;
     const metric = C.metricize(calc, readDisp(), unit);
-    wrap.innerHTML = C.renderResult(calc, calc.compute(metric));
+    const result = calc.compute(metric);
+    wrap.innerHTML = C.renderResult(calc, result);
+    if (!trackedUse && typeof window.gtag === "function" && result && result.primary != null && !isNaN(result.primary)) {
+      trackedUse = true;
+      window.gtag("event", "tool_use", { action: "calculate" });
+    }
   }
 
   // Convert every unit-dependent field when the unit toggle flips.
