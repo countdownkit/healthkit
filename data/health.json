@@ -1,0 +1,129 @@
+{
+  "groups": [
+    { "id": "body", "title": "Weight & body", "blurb": "Where your weight and measurements sit, and what a healthy range looks like for your height." },
+    { "id": "energy", "title": "Calories & macros", "blurb": "How many calories you burn and eat, and how to split them across protein, carbs and fat." },
+    { "id": "daily", "title": "Daily needs", "blurb": "Simple day-to-day targets for water and protein based on your bodyweight and goals." }
+  ],
+  "pages": [
+    {
+      "slug": "bmi-calculator",
+      "calc": "bmi",
+      "group": "body",
+      "emoji": "⚖️",
+      "name": "BMI Calculator",
+      "h1": "BMI Calculator",
+      "title": "BMI Calculator — Body Mass Index (Metric & Imperial)",
+      "desc": "Free BMI calculator. Enter height and weight in metric or imperial to get your Body Mass Index, weight category, and the healthy weight range for your height.",
+      "formula": "Body Mass Index is your weight in kilograms divided by the square of your height in metres (BMI = kg ÷ m²). The standard adult bands are: under 18.5 underweight, 18.5–24.9 normal, 25–29.9 overweight, and 30 or higher obese.",
+      "tip": "BMI was designed for populations, not individuals. It doesn't account for muscle, bone density, sex or age, so use it alongside waist measurement and how you feel — not on its own."
+    },
+    {
+      "slug": "ideal-weight-calculator",
+      "calc": "ideal",
+      "group": "body",
+      "emoji": "🎯",
+      "name": "Ideal Weight Calculator",
+      "h1": "Ideal Weight Calculator",
+      "title": "Ideal Weight Calculator — Devine & Robinson Formulas",
+      "desc": "Estimate your ideal body weight from height and sex using the Devine and Robinson formulas. Free, metric and imperial, results in kg and lb.",
+      "formula": "The Devine formula (1974) starts from a base weight at 5 ft and adds 2.3 kg per inch above it — 50 kg for men, 45.5 kg for women. The Robinson formula (1983) uses a base of 52 kg (men) or 49 kg (women) plus 1.9 kg (men) or 1.7 kg (women) per inch over 5 ft.",
+      "tip": "These formulas were built for medication dosing, not fitness goals, and they only use height and sex. A healthy weight is a range, not a single number — cross-check with the BMI calculator."
+    },
+    {
+      "slug": "body-fat-calculator",
+      "calc": "bodyfat",
+      "group": "body",
+      "emoji": "📏",
+      "name": "Body Fat Calculator",
+      "h1": "Body Fat Percentage Calculator",
+      "title": "Body Fat Calculator — U.S. Navy Method (Metric & Imperial)",
+      "desc": "Estimate body fat percentage with the U.S. Navy tape method. Enter height, neck and waist (plus hip for women) in metric or imperial. Free, no signup.",
+      "formula": "The U.S. Navy method estimates body fat from circumference measurements and height using log-based equations. Men use neck and waist; women add the hip measurement. Measure the waist at the navel and the neck just below the larynx, snug but not compressing the skin.",
+      "tip": "Because it relies on a tape measure, technique matters — measure the same spots the same way each time. For tracking change over weeks it's more useful than any single reading."
+    },
+    {
+      "slug": "calorie-calculator",
+      "calc": "calorie",
+      "group": "energy",
+      "emoji": "🔥",
+      "name": "Calorie Calculator",
+      "h1": "Daily Calorie Calculator",
+      "title": "Calorie Calculator — Daily Calories to Maintain, Lose or Gain",
+      "desc": "Work out how many calories you need per day to maintain, lose or gain weight. Uses the Mifflin-St Jeor equation and your activity level. Metric and imperial.",
+      "formula": "We estimate your resting metabolism with the Mifflin-St Jeor equation, multiply by an activity factor to get your total daily energy expenditure (TDEE), then subtract or add 500 calories for weight loss or gain — roughly 1 lb (0.45 kg) per week, since a pound of fat is about 3,500 kcal.",
+      "tip": "These are starting estimates. Track your weight for two to three weeks and adjust: if it isn't moving the way you want, nudge calories by 100–200 per day rather than making a big change."
+    },
+    {
+      "slug": "bmr-calculator",
+      "calc": "bmr",
+      "group": "energy",
+      "emoji": "🛌️",
+      "name": "BMR Calculator",
+      "h1": "BMR Calculator",
+      "title": "BMR Calculator — Basal Metabolic Rate (Mifflin-St Jeor)",
+      "desc": "Calculate your Basal Metabolic Rate — the calories your body burns at rest — with the Mifflin-St Jeor equation. Free, metric and imperial.",
+      "formula": "Basal Metabolic Rate is the energy your body uses at complete rest. The Mifflin-St Jeor equation — the most accurate of the common formulas — is 10 × weight(kg) + 6.25 × height(cm) − 5 × age, then + 5 for men or − 161 for women.",
+      "tip": "BMR is only part of the picture — digestion and daily movement burn more on top of it. Multiply BMR by an activity factor (see the TDEE calculator) to estimate what you actually need to eat."
+    },
+    {
+      "slug": "tdee-calculator",
+      "calc": "tdee",
+      "group": "energy",
+      "emoji": "⚡",
+      "name": "TDEE Calculator",
+      "h1": "TDEE Calculator",
+      "title": "TDEE Calculator — Total Daily Energy Expenditure",
+      "desc": "Calculate your TDEE (Total Daily Energy Expenditure) from BMR and activity level using Mifflin-St Jeor. Free calorie-maintenance estimate, metric and imperial.",
+      "formula": "Total Daily Energy Expenditure is your resting metabolism (Mifflin-St Jeor BMR) multiplied by an activity factor — from 1.2 for sedentary up to 1.9 for very hard training or a physical job. It's roughly the calories you burn in a day.",
+      "tip": "Most people slightly overestimate their activity level. If you sit most of the day but train a few times a week, “lightly” or “moderately” active is usually closer than “very” active."
+    },
+    {
+      "slug": "macro-calculator",
+      "calc": "macro",
+      "group": "energy",
+      "emoji": "🍗",
+      "name": "Macro Calculator",
+      "h1": "Macro Calculator",
+      "title": "Macro Calculator — Protein, Carbs & Fat from Calories",
+      "desc": "Split your daily calories into grams of protein, carbs and fat with a chosen ratio (balanced, high-protein, low-carb, keto). Free macronutrient calculator.",
+      "formula": "Protein and carbohydrate each provide 4 calories per gram, and fat provides 9. For each macro: grams = total calories × its percentage ÷ calories-per-gram. So 2,000 kcal at a 40/30/30 carb/protein/fat split is 200 g carbs, 150 g protein and about 67 g fat.",
+      "tip": "Pick a split you can stick to. A common evidence-based approach is to set protein first (around 0.7–1 g per pound of bodyweight), then divide the rest between carbs and fat by preference."
+    },
+    {
+      "slug": "calories-burned-calculator",
+      "calc": "burned",
+      "group": "energy",
+      "emoji": "🏃",
+      "name": "Calories Burned Calculator",
+      "h1": "Calories Burned Calculator",
+      "title": "Calories Burned Calculator — by Activity, Weight & Time (MET)",
+      "desc": "Estimate calories burned during exercise from your weight, the activity and how long you did it, using MET values. Free, metric and imperial.",
+      "formula": "Each activity has a MET value (metabolic equivalent) from the Compendium of Physical Activities. Calories per minute = MET × 3.5 × weight(kg) ÷ 200, multiplied by the number of minutes. Heavier bodies and harder efforts burn more.",
+      "tip": "MET values are averages across many people, so treat the number as a ballpark. Intensity matters a lot — an easy jog and a hard run share a label but not the burn."
+    },
+    {
+      "slug": "water-intake-calculator",
+      "calc": "water",
+      "group": "daily",
+      "emoji": "💧",
+      "name": "Water Intake Calculator",
+      "h1": "Water Intake Calculator",
+      "title": "Water Intake Calculator — How Much Water Should You Drink?",
+      "desc": "Estimate how much water to drink per day from your bodyweight and daily exercise. Results in liters, ounces and cups. Free, metric and imperial.",
+      "formula": "A common rule of thumb is about 35 ml of water per kilogram of bodyweight, plus roughly 350 ml (12 oz) for every 30 minutes of exercise. Food and other drinks count toward the total, so you rarely need to hit it from plain water alone.",
+      "tip": "Thirst and urine colour are the best everyday guides — aim for pale yellow. Hot weather, illness, pregnancy and breastfeeding all raise your needs above any formula."
+    },
+    {
+      "slug": "protein-calculator",
+      "calc": "protein",
+      "group": "daily",
+      "emoji": "🥩",
+      "name": "Protein Calculator",
+      "h1": "Protein Calculator",
+      "title": "Protein Calculator — Daily Protein Intake by Goal",
+      "desc": "Calculate how much protein to eat per day from your bodyweight and goal — general health, active lifestyle, building muscle or losing fat. Free, metric and imperial.",
+      "formula": "The RDA is 0.8 g of protein per kilogram of bodyweight, enough to avoid deficiency. Active people generally aim higher: about 1.2 g/kg for an active lifestyle, 1.6 g/kg to build muscle, and up to 2.0 g/kg when losing fat to preserve lean mass.",
+      "tip": "Total daily protein matters more than exact timing, but spreading it over 3–4 meals and pairing higher intakes with resistance training gets the most out of it."
+    }
+  ]
+}
