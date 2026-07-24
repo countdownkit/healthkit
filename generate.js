@@ -56,7 +56,7 @@ function layout({ title, desc, urlPath, h1, body }) {
 </main>
 <footer class="site-foot"><div class="wrap">
   <a href="${BASE}/">Home</a><a href="${BASE}/#body">Weight &amp; body</a><a href="${BASE}/#energy">Calories &amp; macros</a><a href="${BASE}/#daily">Daily needs</a>
-  <span>· ${SITE} — free health &amp; fitness calculators. Educational estimates, not medical advice. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>.</span>
+  <span>· ${SITE} — free health &amp; fitness calculators. Educational estimates, not medical advice. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
 </div></footer>
 <script src="${BASE}/calc.js"></script>
 <script src="${BASE}/tool.js" defer></script>
