@@ -56,7 +56,7 @@ function layout({ title, desc, urlPath, h1, body }) {
 </main>
 <footer class="site-foot"><div class="wrap">
   <a href="${BASE}/">Home</a><a href="${BASE}/#body">Weight &amp; body</a><a href="${BASE}/#energy">Calories &amp; macros</a><a href="${BASE}/#daily">Daily needs</a>
-  <span>· ${SITE} — free health &amp; fitness calculators. Educational estimates, not medical advice. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
+  <span>· ${SITE} — free health &amp; fitness calculators. Educational estimates, not medical advice. Part of <a href="https://elevatedprogress.com/">Elevated Progress</a>. · <a href="https://elevatedprogress.com/about/">About</a> · <a href="https://elevatedprogress.com/contact/">Contact</a> · <a href="https://elevatedprogress.com/privacy/">Privacy Policy</a></span>
 </div></footer>
 <script src="${BASE}/calc.js"></script>
 <script src="${BASE}/tool.js" defer></script>
@@ -170,6 +170,23 @@ for (const page of DATA.pages) calcPage(page);
   <div class="ad-slot">Advertisement</div>
   <div class="prose">
     <p>These calculators use the standard published equations — Mifflin-St Jeor for metabolism, the U.S. Navy method for body fat, Devine and Robinson for ideal weight, and MET values for energy burned. They give solid estimates, but every formula is a generalization. For anything that affects your health, treat the numbers as a starting point and check with a professional.</p>
+  </div>
+  <div class="ad-slot">Advertisement</div>
+  <div class="prose">
+    <h2>Which health calculator should you use?</h2>
+    <p>To see where your weight sits, start with the <a href="${BASE}/bmi-calculator/">BMI calculator</a> (weight in kilograms ÷ height in metres squared) and the <a href="${BASE}/ideal-weight-calculator/">ideal weight calculator</a>, which uses the Devine and Robinson formulas. Then sanity-check both with the <a href="${BASE}/body-fat-calculator/">body fat calculator</a>: BMI can't tell muscle from fat, so a well-trained lifter often reads as "overweight" on it while the tape-based body-fat estimate tells a different story.</p>
+    <p>If your goal is changing your weight, the tools chain together. Your <a href="${BASE}/bmr-calculator/">BMR</a> (Mifflin-St Jeor) is what you'd burn lying in bed all day. Multiply it by an activity factor — 1.2 for sedentary up to 1.9 for hard daily training — to get your <a href="${BASE}/tdee-calculator/">TDEE</a>, roughly what you burn in a full day. Eat around your TDEE to maintain, about 500 kcal below it to lose close to a pound a week, or above it to gain. Feed that calorie number into the <a href="${BASE}/macro-calculator/">macro calculator</a> to split it into grams of protein, carbs and fat.</p>
+    <p>For everyday targets, the <a href="${BASE}/protein-calculator/">protein calculator</a> sets a daily gram goal from your bodyweight (0.8 g/kg for general health up to about 2.0 g/kg when dieting to hold onto muscle), the <a href="${BASE}/water-intake-calculator/">water intake calculator</a> estimates fluids from your weight and exercise, and the <a href="${BASE}/calories-burned-calculator/">calories burned calculator</a> sizes a workout using MET values. Every result is an estimate meant to guide sensible decisions, not to diagnose anything.</p>
+    <h3>What's the difference between BMR and TDEE?</h3>
+    <p>BMR is the energy your body uses at complete rest just to keep you alive. TDEE is that same number multiplied by an activity factor, so it also counts digestion, walking around and exercise. TDEE is always the larger figure, and it's the one to compare your daily calorie intake against.</p>
+    <h3>How accurate is BMI?</h3>
+    <p>BMI is a fast weight-for-height screen, not a measure of body composition. Because it only uses height and weight, it can flag a muscular person as overweight or miss excess fat on someone who weighs little. Read it alongside a waist measurement and the body fat calculator rather than on its own.</p>
+    <h3>How do I turn calories into a weight-loss or muscle-gain plan?</h3>
+    <p>Find your TDEE, then subtract roughly 500 kcal a day to lose about a pound a week, or add a similar amount to gain. Run that calorie figure through the macro calculator and set protein first — around 0.7–1 g per pound of bodyweight — so you preserve muscle whichever direction you're heading.</p>
+    <h3>Which numbers do I actually need to enter?</h3>
+    <p>Weight and height cover BMI and ideal weight; add sex and age for BMR, TDEE and daily calories; the body fat calculator also needs neck and waist (plus hip for women). Everything works in imperial or metric — switch units and the values convert, they aren't just relabeled.</p>
+    <h3>Are these results medical advice?</h3>
+    <p>No. Every formula here is a population average that can't see your medical history, medications or full body composition, so treat the output as a starting point and talk to a doctor or registered dietitian before making big changes to your diet or training.</p>
   </div>`;
   writePage(`/`, layout({ title, desc, urlPath: `/`, h1: `Free Health & Fitness Calculators`, body }));
 }

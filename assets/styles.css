@@ -103,6 +103,7 @@ input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 0;
 .prose { margin: 22px 0; }
 .prose p { margin: 0 0 14px; }
 .prose h2 { margin-top: 22px; }
+.prose h3 { font-size: 16px; margin: 20px 0 6px; letter-spacing: -.01em; }
 .ad-slot {
   margin: 22px 0;
   min-height: 90px;
